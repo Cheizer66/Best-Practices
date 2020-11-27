@@ -1,0 +1,54 @@
+.container {
+  max-width: 100rem;
+  height: 148rem;
+  margin: 3rem auto;
+  background-color: #ffffff;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  box-shadow: 0 0rem 2rem rgba(rgb(199, 199, 199), 1);
+}
+
+.header {
+  font-size: 1.4rem;
+  height: 8rem;
+  width: 100%;
+  background-color: $clr-header;
+  border-color: #fff;
+  overflow: hidden;
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+
+  &__logo {
+    height: 3.5rem;
+    padding-left: 2rem;
+  }
+
+  logo-footer {
+    height: 3.5rem;
+  }
+}
+
+.invisible__div {
+  width: 16rem;
+}
+
+.footer {
+  height: 7rem;
+  width: 120%;
+  background-color: $clr-header;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
