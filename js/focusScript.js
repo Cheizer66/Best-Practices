@@ -19,8 +19,8 @@ console.log(questionsFocusA);
 // FUNCTION;
 
 function displayQuestions() {
-  unique_focus.forEach(
-    (focus, index) => (document.getElementById("focusText" + index).innerHTML = focus)
+  questionsFocusA.forEach(
+    (focus, index) => (document.getElementById("question" + index).innerHTML = focus)
   );
   step4Info.innerHTML = "";
   const htmlStep4Info = `<div class="bestPractices__default" id='bestPracticeDefault'> Stap 2. Kies een vraag</div>`;
