@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- responisve webdesign werkt niet zonder deze code. De width van de content moet de device zijn. Zonder dit te specificeren zoemt de brwoser de content uit. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+
+
+    <!-- NPM PACKAGES-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <title>Best Practices</title>
+    </head>
+    <body>
+      <div class="container">
+        <header class="header">
+          <img src="img/best-practices-logo-header.png" alt="best practices logo header" class="header__logo"> 
+          <nav class="header-nav">
+              <div class="header-nav__icon-box">
+                <svg class="header-nav__icon">
+                  <use xlink:href="img/symbol-defs.svg#icon-grid"></use>
+                </svg>
+              </div>
+
+              <div class="header-nav__icon-box">
+                <svg class="header-nav__icon">
+                  <use xlink:href="img/symbol-defs.svg#icon-heart"></use>
+                </svg>
+              </div>
+
+              <div class="header-nav__icon-box">
+                <svg class="header-nav__icon">
+                  <use xlink:href="img/symbol-defs.svg#icon-info"></use>
+                </svg>
+              </div>
+            </nav>
+            <div class="invisible__div"></div> 
+        </header>
+        <div class="content"></div>
+          <div class="steps">
+            <div class="steps__category" id='step1'>Categorie</div>
+            <div class="steps__theme" id='step2'>Thema</div>
+            <div class="steps__focus" id='step3'>Focus</div>
+            <div class="steps__question" id='step4'>Vraag</div>
+            <div class="steps__best-practice" id='step5'>Best Practice</div>
+          </div>
+          
+          <div class="categories__container">
+            <div class="categories">
+              <div class="categories__A categories__inactive" id='category0'>Moreel beraad</div>
+              <div class="categories__B categories__inactive" id='category1'>Praktische zaken</div>
+              <div class="categories__C categories__inactive" id='category2'>Basis kennis</div>
+              <div class="categories__D categories__inactive" id='category3'>CAO</div>
+              <div class="categories__E categories__inactive" id='category4'>Beroeps code</div>
+            </div>
+          </div>
+            
+          <div class="themes__container">
+            <div class="themes">
+              <div class="themes__A themes__inactive" id='theme0'>
+                <div class="themes__A--text" id='themeText0'>Verantwoordelijkheid</div>
+              </div>
+              <div class="themes__B themes__inactive" id='theme1'>
+                <div class="themes__B--text" id='themeText1'>Agressie</div>
+              </div>
+              <div class="themes__C themes__inactive" id='theme2'>
+                <div class="themes__C--text" id='themeText2'>Verleiding</div>
+              </div>
+              <div class="themes__D themes__inactive" id='theme3'>
+                <div class="themes__D--text" id='themeText3'>Privacy</div>
+              </div>
+              <div class="themes__E themes__inactive" id='theme4'>
+                <div class="themes__E--text" id='themeText4'>Huisregels</div>
+              </div>
+              <div class="themes__F themes__inactive" id='theme5'>
+                <div class="themes__F--text" id='themeText5'>Collega's</div>
+              </div>
+              <div class="themes__G themes__inactive" id='theme6'>
+                <div class="themes__G--text" id='themeText6'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="focus__container">
+            <div class="focus">
+              <div class="focus__A focus__inactive" id='focus0'>
+                <div class="focus__A--text" id='focusText0'>Collega's</div>
+              </div>
+              <div class="focus__B focus__inactive" id='focus1'>
+                <div class="focus__B--text" id='focusText1'>Collega's</div>
+              </div>
+              <div class="focus__C focus__inactive" id='focus2'>
+                <div class="focus__C--text" id='focusText2'>Collega's</div>
+              </div>
+              <div class="focus__D focus__inactive" id='focus3'>
+                <div class="focus__D--text" id='focusText3'>Collega's</div>
+              </div>
+              <div class="focus__E focus__inactive" id='focus4'>
+                <div class="focus__E--text" id='focusText4'>Collega's</div>
+              </div>
+              <div class="focus__F focus__inactive" id='focus5'>
+                <div class="focus__F--text" id='focusText5'>Collega's</div>
+              </div>
+              <div class="focus__G focus__inactive" id='focus6'>
+                <div class="focus__G--text" id='focusText6'></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="questions__container">
+            <div class="questions">
+              <div class="questions__A" id='theme0'></div>
+              <div class="questions__B" id='theme1'></div>
+              <div class="questions__C" id='theme2'></div>
+              <div class="questions__D" id='theme3'></div>
+              <div class="questions__E" id='theme4'></div>
+              <div class="questions__F" id='theme5'></div>
+              <div class="questions__G" id='theme6'></div>
+            </div>
+          </div>
+
+          <div class="bestPractices__container">
+            <div class="bestPractices">
+              <div class="bestPractices__default" id='bestPracticeDefault'> Stap 1. Kies een categorie</div>
+            </div>
+          </div>
+
+          <div class="footer">
+            <img src="img/best-practices-logo-header.png" alt="best practices logo header" class="header__logo header__logo-footer">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+      <!-- GLOBAL SCRIPT -->
+      <script src="js/globalScript.js"></script>
+      
+      <!-- FORMS -->
+      <script src="js/categoryAForms.js"></script>
+      <script src="js/categoryBForms.js"></script>
+      
+      <!-- SCRIPTS FOR FILTERS -->
+      <script src="js/focusScript.js"></script>
+      <script src="js/categoriesScript.js"></script>
+      <script src="js/themesScript.js"></script>
+    </body>
+    
+</html>
