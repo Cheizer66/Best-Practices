@@ -20,3 +20,11 @@ $(document).ready(function () {
 // if ($(".categories__inactive").not(this).hasClass("categories__active")) {
 //   $(".themes__inactive").removeClass("themes__active");
 // }
+
+let state = {
+  category: [],
+  themes: [],
+  focus: [],
+  question: [],
+  answer: [],
+};

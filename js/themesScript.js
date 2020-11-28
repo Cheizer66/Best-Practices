@@ -1,24 +1,24 @@
-// CSS VARIABLES THEMES GLOBAL
-
+// VARIABLES THEMES GLOBAL
 const step3Info = document.querySelector(".bestPractices__default");
 const step2Active = document.querySelector(".steps__theme");
 const focusText = document.querySelector(".focus");
 
 // THEME A
 
-// CSS VARIABLES THEME A
-
+// VARIABLES THEME A SPECIFIC
 let theme1 = document.getElementById("themeText0").innerHTML;
 
 // FILTER FOCUS
+const unique_focusA = [...new Set(formsA.filter((i) => i[1] === theme1).map((i) => i[2]))];
 
-const unique_focus = [...new Set(formsA.filter((i) => i[1] === theme1).map((i) => i[2]))];
 // FUNCTION
+function displayFocusA() {
+  state.focus = [];
+  unique_focusA.forEach(function (focus, index) {
+    document.getElementById("focusText" + index).innerHTML = focus;
+    state.focus.push(focus);
+  });
 
-function displayFocus() {
-  unique_focus.forEach(
-    (focus, index) => (document.getElementById("focusText" + index).innerHTML = focus)
-  );
   step3Info.innerHTML = "";
   const htmlStep3Info = `<div class="bestPractices__default" id='bestPracticeDefault'> Stap 2. Kies een focus</div>`;
   step3Info.insertAdjacentHTML("afterbegin", htmlStep3Info);
@@ -27,24 +27,26 @@ function displayFocus() {
   step2Active.insertAdjacentHTML("afterbegin", htmlStep2Active);
   focusText.style.color = "black";
 }
-document.querySelector(".themes__A").addEventListener("click", displayFocus);
+
+// EVENT LISTENER
+document.querySelector(".themes__A").addEventListener("click", displayFocusA);
 
 // THEME B
 
-// CSS VARIABLES THEME B
-
+// VARIABLES THEME B SPECIFIC
 let themeB = document.getElementById("themeText1").innerHTML;
 
 // FILTER FOCUS
-
 const unique_focusB = [...new Set(formsA.filter((i) => i[1] === themeB).map((i) => i[2]))];
 
 // FUNCTION
-
 function displayFocusB() {
-  unique_focusB.forEach(
-    (focus, index) => (document.getElementById("focusText" + index).innerHTML = focus)
-  );
+  state.focus = [];
+  unique_focusB.forEach(function (focus, index) {
+    document.getElementById("focusText" + index).innerHTML = focus;
+    stateFocus.push(focus);
+  });
+
   step3Info.innerHTML = "";
   const htmlStep3InfoB = `<div class="bestPractices__default" id='bestPracticeDefault'> Stap 2. Kies een focus</div>`;
   step3Info.insertAdjacentHTML("afterbegin", htmlStep3InfoB);
@@ -54,4 +56,5 @@ function displayFocusB() {
   focusText.style.color = "black";
 }
 
+// EVENT LISTENER
 document.querySelector(".themes__B").addEventListener("click", displayFocusB);
