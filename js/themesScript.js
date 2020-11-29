@@ -18,6 +18,9 @@ function displayFocusA() {
     document.getElementById("focusText" + index).innerHTML = focus;
     state.focus.push(focus);
   });
+  emptyArr.forEach(function (val, index) {
+    document.getElementById("question" + index).innerHTML = val;
+  });
 
   step3Info.innerHTML = "";
   const htmlStep3Info = `<div class="bestPractices__default" id='bestPracticeDefault'> Stap 2. Kies een focus</div>`;
@@ -44,7 +47,10 @@ function displayFocusB() {
   state.focus = [];
   unique_focusB.forEach(function (focus, index) {
     document.getElementById("focusText" + index).innerHTML = focus;
-    stateFocus.push(focus);
+    state.focus.push(focus);
+  });
+  emptyArr.forEach(function (val, index) {
+    document.getElementById("question" + index).innerHTML = val;
   });
 
   step3Info.innerHTML = "";

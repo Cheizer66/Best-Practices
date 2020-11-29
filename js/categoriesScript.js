@@ -20,6 +20,9 @@ function displayThemes() {
     document.getElementById("themeText" + index).innerHTML = theme;
     state.themes.push(theme);
   });
+  emptyArr.forEach(function (val, index) {
+    document.getElementById("focusText" + index).innerHTML = val;
+  });
   step2Info.innerHTML = "";
   const htmlStep2Info = `<div class="bestPractices__default" id='bestPracticeDefault'> Stap 2. Kies een thema</div>`;
   step2Info.insertAdjacentHTML("afterbegin", htmlStep2Info);
