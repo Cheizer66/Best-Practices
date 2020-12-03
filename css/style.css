@@ -317,7 +317,7 @@ body {
   padding-top: 2rem;
   color: #878787; }
 
-.bestPractices__container {
+.answers__container {
   position: relative;
   height: 28rem;
   width: 100%;
@@ -327,7 +327,7 @@ body {
   align-items: center;
   z-index: 500; }
 
-.bestPractices {
+.answers {
   position: relative;
   height: 28rem;
   width: 100%;
@@ -336,7 +336,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   z-index: 500; }
-  .bestPractices__default {
+  .answers__default {
     position: relative;
     padding: 2rem 2rem;
     background-color: #f5f5f5;
@@ -358,7 +358,7 @@ body {
     margin-bottom: 4rem;
     overflow-y: auto;
     z-index: 500; }
-  .bestPractices__active {
+  .answers__active {
     position: relative;
     padding: 2rem 2rem;
     background-color: #f5f5f5;
@@ -382,7 +382,7 @@ body {
     overflow-y: auto;
     z-index: 500; }
 
-.saveBpText {
+.answersText {
   position: absolute;
   bottom: 60px;
   right: 60px;
@@ -392,10 +392,10 @@ body {
   z-index: 99999999999;
   cursor: pointer;
   transition: all 0.2s; }
-  .saveBpText:hover {
+  .answersText:hover {
     fill: #878787; }
 
-.saveBpText__active {
+.answersText__active {
   position: absolute;
   bottom: 60px;
   right: 60px;
@@ -1125,7 +1125,7 @@ body {
     height: 13rem;
     width: 13rem;
     color: #fff; }
-  .steps__best-practice {
+  .steps__answers {
     background-color: #ffffff;
     border: 2px solid #878787;
     position: relative;
@@ -1141,7 +1141,7 @@ body {
     justify-content: center;
     text-align: center;
     width: 12rem; }
-  .steps__best-practice--active {
+  .steps__answers--active {
     box-shadow: 0 0rem 2rem #878787;
     background-color: #878787;
     position: relative;
