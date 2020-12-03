@@ -24,26 +24,38 @@
       <div class="container">
         <header class="header">
           <img src="img/vertical-filter.png" alt="best practices logo header" class="header__logo"> 
-          <nav class="header-nav">
-              <div class="header-nav__icon-box">
-                <svg class="header-nav__icon">
-                  <use xlink:href="img/symbol-defs.svg#icon-grid"></use>
+          
+          <form action="#" class="search">
+            <input type="text" class="search__input" placeholder="Zoeken">
+            <button class="search__button">
+                <svg class="search__icon">
+                    <use xlink:href="img/symbol-defs.svg#icon-search"></use>
                 </svg>
-              </div>
+            </button>
+        </form>
+          
+        <nav class="header-nav">
+              <a href="#popupNew" class="header-nav__icon-box-new">
+                <svg class="header-nav__icon">
+                  <use xlink:href="img/symbol-defs.svg#icon-plus"></use>
+                </svg>
+              </diav>
 
-              <div class="header-nav__icon-box">
+              <a href="#popupSaved" class="header-nav__icon-box-saved">
                 <svg class="header-nav__icon">
                   <use xlink:href="img/symbol-defs.svg#icon-heart"></use>
                 </svg>
-              </div>
+              </a>
 
-              <div class="header-nav__icon-box">
+              <a href="#popupInfo" class="header-nav__icon-box-info">
                 <svg class="header-nav__icon">
                   <use xlink:href="img/symbol-defs.svg#icon-info"></use>
                 </svg>
-              </div>
+              </a>
             </nav>
-            <div class="invisible__div"></div> 
+
+
+        
         </header>
         <div class="content"></div>
           <div class="steps">
@@ -56,81 +68,109 @@
           
           <div class="categories__container">
             <div class="categories">
-              <div class="categories__A categories__inactive" id='category0'>Moreel beraad</div>
-              <div class="categories__B categories__inactive" id='category1'>Praktische zaken</div>
-              <div class="categories__C categories__inactive" id='category2'>Basis kennis</div>
-              <div class="categories__D categories__inactive" id='category3'>CAO</div>
-              <div class="categories__E categories__inactive" id='category4'>Beroeps code</div>
+              <div class="categories__A categories__inactive" id='category0'>
+                <div class="categories__A--text divText" id='categoryText0'>Moreel beraad</div>
+              </div>
+              <div class="categories__B categories__inactive" id='category1'>
+                <div class="categories__B--text divText" id='categoryText1'>Praktische zaken</div>
+              </div>
+              <div class="categories__C categories__inactive" id='category2'>
+                <div class="categories__C--text divText" id='categoryText2'>Basis kennis</div>
+              </div>
+              <div class="categories__D categories__inactive" id='category3'>
+                <div class="categories__D--text divText" id='categoryText3'>CAO</div>
+              </div>
+              <div class="categories__E categories__inactive" id='category4'>
+                <div class="categories__E--text divText" id='categoryText4'>Beroeps code</div>
+              </div>
             </div>
           </div>
             
-          <div class="themes__container">
+          <div class="themes__container themes__container--inactive ">
             <div class="themes">
               <div class="themes__A themes__inactive" id='theme0'>
-                <div class="themes__A--text" id='themeText0'>Verantwoordelijkheid</div>
+                <div class="themes__A--text divText" id='themeText0'></div>
               </div>
               <div class="themes__B themes__inactive" id='theme1'>
-                <div class="themes__B--text" id='themeText1'>Agressie</div>
+                <div class="themes__B--text divText" id='themeText1'></div>
               </div>
               <div class="themes__C themes__inactive" id='theme2'>
-                <div class="themes__C--text" id='themeText2'>Verleiding</div>
+                <div class="themes__C--text divText" id='themeText2'></div>
               </div>
               <div class="themes__D themes__inactive" id='theme3'>
-                <div class="themes__D--text" id='themeText3'>Privacy</div>
+                <div class="themes__D--text divText" id='themeText3'></div>
               </div>
               <div class="themes__E themes__inactive" id='theme4'>
-                <div class="themes__E--text" id='themeText4'>Huisregels</div>
+                <div class="themes__E--text divText" id='themeText4'></div>
               </div>
               <div class="themes__F themes__inactive" id='theme5'>
-                <div class="themes__F--text" id='themeText5'>Collega's</div>
+                <div class="themes__F--text divText" id='themeText5'></div>
               </div>
               <div class="themes__G themes__inactive" id='theme6'>
-                <div class="themes__G--text" id='themeText6'></div>
+                <div class="themes__G--text divText" id='themeText6'></div>
               </div>
             </div>
           </div>
 
-          <div class="focus__container">
+          <div class="focus__container focus__container--inactive">
             <div class="focus">
               <div class="focus__A focus__inactive" id='focus0'>
-                <div class="focus__A--text" id='focusText0'>Vulling</div>
+                <div class="focus__A--text divText" id='focusText0'></div>
               </div>
               <div class="focus__B focus__inactive" id='focus1'>
-                <div class="focus__B--text" id='focusText1'>Vulling</div>
+                <div class="focus__B--text divText" id='focusText1'></div>
               </div>
               <div class="focus__C focus__inactive" id='focus2'>
-                <div class="focus__C--text" id='focusText2'>Vulling</div>
+                <div class="focus__C--text divText" id='focusText2'></div>
               </div>
               <div class="focus__D focus__inactive" id='focus3'>
-                <div class="focus__D--text" id='focusText3'>Vulling</div>
+                <div class="focus__D--text divText" id='focusText3'></div>
               </div>
               <div class="focus__E focus__inactive" id='focus4'>
-                <div class="focus__E--text" id='focusText4'>Vulling</div>
+                <div class="focus__E--text divText" id='focusText4'></div>
               </div>
               <div class="focus__F focus__inactive" id='focus5'>
-                <div class="focus__F--text" id='focusText5'>Vulling</div>
+                <div class="focus__F--text divText" id='focusText5'></div>
               </div>
               <div class="focus__G focus__inactive" id='focus6'>
-                <div class="focus__G--text" id='focusText6'></div>
+                <div class="focus__G--text divText" id='focusText6'></div>
               </div>
             </div>
           </div>
 
-          <div class="questions__container">
+          <div class="questions__container questions__container--inactive">
             <div class="questions">
-              <div class="questions__A questions__inactive" id='question0'></div>
-              <div class="questions__B questions__inactive" id='question1'></div>
-              <div class="questions__C questions__inactive" id='question2'></div>
-              <div class="questions__D questions__inactive" id='question3'></div>
-              <div class="questions__E questions__inactive" id='question4'></div>
-              <div class="questions__F questions__inactive" id='question5'></div>
-              <div class="questions__G questions__inactive" id='question6'></div>
+              <div class="questions__A questions__inactive" id='question0'>
+                <div class="questions__A--text divText" id='questionsText0'></div>
+              </div>
+              <div class="questions__B questions__inactive" id='question1'>
+                <div class="questions__B--text divText" id='questionsText1'></div>
+              </div>
+              <div class="questions__C questions__inactive" id='question2'>
+                <div class="questions__C--text divText" id='questionsText2'></div>
+              </div>
+              <div class="questions__D questions__inactive" id='question3'>
+                <div class="questions__D--text divText" id='questionsText3'></div>
+              </div>
+              <div class="questions__E questions__inactive" id='question4'>
+                <div class="questions__E--text divText" id='questionsText4'></div>
+              </div>
+              <div class="questions__F questions__inactive" id='question5'>
+                <div class="questions__F--text divText" id='questionsText5'></div>
+              </div>
+              <div class="questions__G questions__inactive" id='question6'>
+                <div class="questions__G--text divText" id='questionsText6'></div>
+              </div>
             </div>
           </div>
 
           <div class="bestPractices__container">
             <div class="bestPractices">
-              <div class="bestPractices__default bestPractices__inactive" id='bestPracticeDefault'> Stap 1. Kies een categorie</div>
+              <div class="bestPractices__default bestPractices__inactive" id='bestPracticeDefault'> Stap 1. Kies een categorie
+              </div>
+              <svg class="saveBpText">
+                <use xlink:href="img/symbol-defs.svg#icon-heart"></use>
+              </svg>
             </div>
           </div>
 
@@ -140,19 +180,91 @@
         </div>
       </div>
     </div>
+    
+    <div class="popupInfo" id="popupInfo">
+      <div class="popupInfo__content">
+        <div class="popupInfo__text">
+          <a href="#content" class="popupInfo__close">&times;</a>
+          <h1 class="heading-primary">Hoe werkt Best Practices?</h1>
+          <p class="par">Best practices is een dashboard waarmee je door de praktijk bewezen passende interventies (oplossingen) voor vaak voorkomende vraagstukken kan bewaren, terugvinden en uitbreiden.</p>
+          <h3 class="heading-tertiary yellow">Stap 1</h3>
+          <p class="par">Kies een categorie</p>
+          <h3 class="heading-tertiary green">Stap 2</h3>
+          <p class="par">Kies een thema</p>
+          <h3 class="heading-tertiary blue">Stap 3</h3>
+          <p class="par">Kies een focus</p>
+          <h3 class="heading-tertiary red">Stap 4</h3>
+          <p class="par">Kies een vraag</p>
+          <h3 class="heading-tertiary grey">Stap 5</h3>
+          <p class="par">Lees het antwoord</p>
+        </div>
+      </div>
+
+    <div class="popupSaved" id="popupSaved">
+      <div class="popupSaved__content">
+        <div class="popupSaved__text">
+          <a href="#content" class="popupSaved__close">&times;</a>
+          <h1 class="heading-primary">Hoe werkt Best Practices?</h1>
+          <p class="par">Best practices is een dashboard waarmee je door de praktijk bewezen passende interventies (oplossingen) voor vaak voorkomende vraagstukken kan bewaren, terugvinden en uitbreiden.</p>
+          <h3 class="heading-tertiary yellow">Stap 1</h3>
+          <p class="par">Kies een categorie</p>
+          <h3 class="heading-tertiary green">Stap 2</h3>
+          <p class="par">Kies een thema</p>
+          <h3 class="heading-tertiary blue">Stap 3</h3>
+          <p class="par">Kies een focus</p>
+          <h3 class="heading-tertiary red">Stap 4</h3>
+          <p class="par">Kies een vraag</p>
+          <h3 class="heading-tertiary grey">Stap 5</h3>
+          <p class="par">Lees het antwoord</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="popupNew" id="popupNew">
+      <div class="popupNew__content">
+        <div class="popupNew__text">
+          <a href="#content" class="popupNew__close">&times;</a>
+          <h1 class="heading-primary">Hoe werkt Best Practices?</h1>
+          <p class="par">Best practices is een dashboard waarmee je door de praktijk bewezen passende interventies (oplossingen) voor vaak voorkomende vraagstukken kan bewaren, terugvinden en uitbreiden.</p>
+          <h3 class="heading-tertiary yellow">Stap 1</h3>
+          <p class="par">Kies een categorie</p>
+          <h3 class="heading-tertiary green">Stap 2</h3>
+          <p class="par">Kies een thema</p>
+          <h3 class="heading-tertiary blue">Stap 3</h3>
+          <p class="par">Kies een focus</p>
+          <h3 class="heading-tertiary red">Stap 4</h3>
+          <p class="par">Kies een vraag</p>
+          <h3 class="heading-tertiary grey">Stap 5</h3>
+          <p class="par">Lees het antwoord</p>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
+
+
+
+
 
 
       <!-- GLOBAL SCRIPT -->
       <script src="js/globalScript.js"></script>
+
+      <!-- GLOBAL SCRIPT -->
+      <script src="js/searchbarScript.js"></script>
       
       <!-- FORMS -->
       <script src="js/categoryAForms.js"></script>
       <script src="js/categoryBForms.js"></script>
       
       <!-- SCRIPTS FOR FILTERS -->
+      <script src="js/bestPracticeScript.js"></script>
+      <script src="js/questionsScript.js"></script>
       <script src="js/focusScript.js"></script>
       <script src="js/categoriesScript.js"></script>
       <script src="js/themesScript.js"></script>
     </body>
+
     
 </html>
