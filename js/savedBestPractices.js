@@ -7,7 +7,6 @@ let allSavedBestPractices = [];
 function saveBestPractice() {
   let savedBestPractice = state;
   allSavedBestPractices.push(...state);
-  saveContainer.innerHTML = "";
   const htmlSavedBestPractice = `<div class="popupSaved__text">
   <h3 class="heading-saved">Vraag</h3>
   <div class="par__question-saved">${state[3]}</div>
