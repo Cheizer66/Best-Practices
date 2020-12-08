@@ -1,6 +1,6 @@
-# Vertical-Filter
+# Best Practices
 
-I'm working on a filter, which filters a array of nested arrays down to the value of one last index. This happens in 5 steps. At each step you choose which index value (string) get used to filter the array further. 
+I'm working on a filter which filters a array of nested arrays down to the value of one last index. This happens in 5 steps. At each step you choose which index value (string) get used to filter the array. 
 
 What you will see is an interface with 5 rows which represent a 5 levels deep array. 
 
