@@ -214,26 +214,50 @@
 
     <div class="popupNew" id="popupNew">
       <div class="popupNew__container-big">
-        <div class="popupNew__text">
-          <a href="#content" class="popupNew__close">&times;</a>
-          <h1 class="heading-primary">Hoe werkt Best Practices?</h1>
-          <p class="par">Best practices is een dashboard waarmee je door de praktijk bewezen passende interventies (oplossingen) voor vaak voorkomende vraagstukken kan bewaren, terugvinden en uitbreiden.</p>
-          <h3 class="heading-tertiary yellow">Stap 1</h3>
-          <p class="par">Kies een categorie</p>
-          <h3 class="heading-tertiary green">Stap 2</h3>
-          <p class="par">Kies een thema</p>
-          <h3 class="heading-tertiary blue">Stap 3</h3>
-          <p class="par">Kies een focus</p>
-          <h3 class="heading-tertiary red">Stap 4</h3>
-          <p class="par">Kies een vraag</p>
-          <h3 class="heading-tertiary grey">Stap 5</h3>
-          <p class="par">Lees het antwoord</p>
+        <div class="popupNew__container-small">
+        <form action="#" class="form" id="formBestPractice">
+          <h1 class="heading-primary">Voeg een nieuwe Best Practice toe</h1>
+          
+          <div class="form__category">
+              <select class="form__category__dropdown" id="selectCategory" value="">
+                <option>Kies een categorie</option>
+              </select>
+              <input type="text" class="form__category__input" placeholder="    Of voeg een nieuwe toe" id="form__categorie" value="">
+          </div>
+
+          <div class="form__theme">
+            <select class="form__theme__dropdown" id="selectTheme" value="">
+              <option>Kies een thema</option>
+            </select>
+            <input type="text" class="form__theme__input" placeholder="    Of voeg een nieuwe toe" id="form__thema" value="">
+          </div>
+
+          <div class="form__focus">
+            <select class="form__focus__dropdown"id="selectFocus" value="">
+              <option>Kies een focus</option>
+            </select>
+            <input type="text" class="form__focus__input" placeholder="    Of voeg een nieuwe toe" id="form__focus" value="">
+          </div>
+
+          <div class="form__question">
+            <input type="text" class="form__question__input" placeholder="    Formuleer je vraag" id="form__question" required value="">
+          </div>
+
+          <div class="form__answer">
+            <textarea type="text" placeholder="    Formuleer je antwoord" class="form__answer__input"  id="form__answer" required value=""></textarea>
+          </div>
+          <button type="submit" value="" class="btn__newBestPractice" id="btn__newBestPractice">Voeg toe</button>
+        </form>
         </div>
+        <a href="#content" class="popupNew__close">&times;</a>
       </div>
     </div>
 
 
 
+     <!-- FORMS -->
+     <script src="js/categoryAForms.js"></script>
+     <script src="js/categoryBForms.js"></script>
 
       <!-- GLOBAL SCRIPT -->
       <script src="js/globalScript.js"></script>
@@ -241,11 +265,7 @@
 
       <!-- POPUPSCRIPT -->
       <script src="js/savedBestPractices.js"></script>
-      <script src="js/addBestPractices.js"></script>
-      
-      <!-- FORMS -->
-      <script src="js/categoryAForms.js"></script>
-      <script src="js/categoryBForms.js"></script>
+      <script src="js/newBestPractices.js"></script>
       
       <!-- SCRIPTS FOR FILTERS -->
       <script src="js/answersScript.js"></script>

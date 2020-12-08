@@ -150,24 +150,31 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: table;
-    width: 75%;
-    height: 75%;
+    width: 70%;
+    height: 70%;
+    background-color: rgba(248, 248, 248, 0.774);
     box-shadow: 0 2rem 4rem black 0.2;
-    background-color: white;
+    border-radius: 2rem;
+    transition: all 0.5s 0.2s; }
+  .popupNew__container-small {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+    display: grid;
+    justify-content: center;
+    width: 90%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0);
     border-radius: 2rem;
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.25);
     transition: all 0.5s 0.2s; }
-  .popupNew__text {
-    display: table-cell;
-    width: 100%;
-    padding: 3rem 5rem;
-    text-align: center; }
   .popupNew:target {
     opacity: 1;
     visibility: visible; }
-  .popupNew:target .popupNew__container-big {
+  .popupNew:target .popupNew__container-small {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1); }
   .popupNew__close:link, .popupNew__close:visited {
@@ -184,6 +191,79 @@ body {
     color: #353535;
     font-size: 3.5rem; }
 
+.form {
+  display: grid;
+  justify-content: center;
+  position: relative; }
+  .form__category {
+    margin-top: 5rem;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 3rem; }
+    .form__category__dropdown {
+      margin-bottom: 1rem; }
+    .form__category__input {
+      font-family: inherit;
+      width: 20rem;
+      height: 2.5rem;
+      font-size: 1.5rem;
+      border-radius: 0.5rem;
+      background-color: white;
+      border: none; }
+  .form__theme {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 3rem; }
+    .form__theme__dropdown {
+      margin-bottom: 1rem; }
+    .form__theme__input {
+      font-family: inherit;
+      width: 20rem;
+      height: 2.5rem;
+      font-size: 1.5rem;
+      border-radius: 0.5rem;
+      background-color: white;
+      border: none; }
+  .form__focus {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 3rem; }
+    .form__focus__dropdown {
+      margin-bottom: 1rem; }
+    .form__focus__input {
+      font-family: inherit;
+      width: 20rem;
+      height: 2.5rem;
+      font-size: 1.5rem;
+      border-radius: 0.5rem;
+      background-color: white;
+      border: none; }
+  .form__question {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 3rem; }
+    .form__question__input {
+      font-family: inherit;
+      width: 40rem;
+      height: 2.5rem;
+      font-size: 1.5rem;
+      border-radius: 0.5rem;
+      background-color: white;
+      border: none; }
+  .form__answer {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 3rem; }
+    .form__answer__input {
+      font-family: inherit;
+      justify-content: top;
+      width: 40rem;
+      height: 15rem;
+      font-size: 1.5rem;
+      border-radius: 0.5rem;
+      background-color: white;
+      border: none; }
+
 .heading-primary {
   padding: 3rem 2rem;
   color: dimgray;
@@ -191,42 +271,20 @@ body {
   font-weight: 300;
   line-height: 0; }
 
-.heading-secondary {
-  padding: 4rem 3rem;
-  font-size: 2.2rem;
-  font-weight: 400;
-  line-height: 0; }
-
-.heading-tertiary {
-  padding: 0.5rem 3rem;
-  font-size: 2.2rem;
-  font-weight: 400;
-  line-height: 0; }
-
-.par {
-  color: #5a5a5a;
-  padding: 2rem 10rem;
-  font-size: 1.8rem; }
-
-.yellow {
-  padding-top: 2rem;
-  color: #c8aa44; }
-
-.green {
-  padding-top: 2rem;
-  color: #678e76; }
-
-.blue {
-  padding-top: 2rem;
-  color: #406f97; }
-
-.red {
-  padding-top: 2rem;
-  color: #bc736b; }
-
-.grey {
-  padding-top: 2rem;
-  color: #878787; }
+.btn__newBestPractice {
+  width: 10rem;
+  height: 4rem;
+  border: none;
+  border-radius: 10rem;
+  margin-left: 40%;
+  font-size: 1.5rem;
+  color: #a8a8a8;
+  background-color: #fff;
+  transition: all 0.4s; }
+  .btn__newBestPractice:hover {
+    border-shadow: 0 2rem 4rem black 0.2;
+    background-color: #8a8a8a;
+    color: #fff; }
 
 .popupInfo {
   height: 100vh;
